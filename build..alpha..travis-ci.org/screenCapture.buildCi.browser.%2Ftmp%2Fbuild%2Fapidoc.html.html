@@ -1,0 +1,918 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/ncb000gt/node-googleanalytics">googleanalytics (v0.3.7)</a>
+</h1>
+<h4>Google Analytics library.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.googleanalytics">module googleanalytics</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA">
+            function <span class="apidocSignatureSpan">googleanalytics.</span>GA
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.captureToken">
+            function <span class="apidocSignatureSpan">googleanalytics.</span>GA.prototype.captureToken
+            <span class="apidocSignatureSpan">(err, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.get">
+            function <span class="apidocSignatureSpan">googleanalytics.</span>GA.prototype.get
+            <span class="apidocSignatureSpan">(options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.login">
+            function <span class="apidocSignatureSpan">googleanalytics.</span>GA.prototype.login
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">googleanalytics.</span>GA.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.googleanalytics.GA">module googleanalytics.GA</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.GA">
+            function <span class="apidocSignatureSpan">googleanalytics.</span>GA
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.super_">
+            function <span class="apidocSignatureSpan">googleanalytics.GA.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.googleanalytics.GA.prototype">module googleanalytics.GA.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.captureToken">
+            function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>captureToken
+            <span class="apidocSignatureSpan">(err, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.get">
+            function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>get
+            <span class="apidocSignatureSpan">(options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.login">
+            function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>login
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.googleanalytics.GA.prototype.captureToken">module googleanalytics.GA.prototype.captureToken</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.captureToken.captureToken">
+            function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>captureToken
+            <span class="apidocSignatureSpan">(err, token)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.googleanalytics.GA.prototype.get">module googleanalytics.GA.prototype.get</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.get.get">
+            function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>get
+            <span class="apidocSignatureSpan">(options, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.googleanalytics.GA.prototype.login">module googleanalytics.GA.prototype.login</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.googleanalytics.GA.prototype.login.login">
+            function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>login
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.googleanalytics" id="apidoc.module.googleanalytics">module googleanalytics</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA" id="apidoc.element.googleanalytics.GA">
+        function <span class="apidocSignatureSpan">googleanalytics.</span>GA
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GA(config) {
+    if (config) {
+        if ('user' in config) {
+            this.user = config.user;
+            this.tokenType = 'GoogleLogin';
+        }
+        if ('password' in config) {
+            this.password = config.password;
+        }
+        this.token = ('token' in config) ? config.token : null;
+        if ('token' in config) {
+            this.tokenType = config.tokenType || 'Bearer';
+        }
+        if ('token' in config &amp;&amp; ('user' in config || 'password' in config)) {
+            throw Error("Invalid config.");
+        }
+    } else {
+        throw Error("No config given.");
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var GA = require('googleanalytics'),
+    util = require('util'),
+    config = {
+        "user": "myusername",
+        "password": "mypassword"
+    },
+    ga = new GA.<span class="apidocCodeKeywordSpan">GA</span>(config);
+
+ga.login(function(err, token) {
+    var options = {
+        'ids': 'ga:&lt;profileid&gt;',
+        'start-date': '2010-09-01',
+        'end-date': '2010-09-30',
+        'dimensions': 'ga:pagePath',
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.captureToken" id="apidoc.element.googleanalytics.GA.prototype.captureToken">
+        function <span class="apidocSignatureSpan">googleanalytics.</span>GA.prototype.captureToken
+        <span class="apidocSignatureSpan">(err, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">GA.prototype.captureToken = function (err, token) {
+    this.token = token;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.get" id="apidoc.element.googleanalytics.GA.prototype.get">
+        function <span class="apidocSignatureSpan">googleanalytics.</span>GA.prototype.get
+        <span class="apidocSignatureSpan">(options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">GA.prototype.get = function (options, cb) {
+    var self = this;
+
+    var rt = (options.metrics.lastIndexOf('rt:',0) === 0 ? true : false);
+    var data_url = "/analytics/v3/data/" + (rt ? "realtime?" : "ga?") + querystring.stringify(options);
+
+    var get_options = {
+        host: 'www.googleapis.com',
+        port: 443,
+        path: data_url,
+        method: 'GET',
+        headers: {
+            Authorization: this.tokenType + " " + this.token,
+            "GData-Version": 2
+        }
+    };
+
+    var req = https.request(get_options, function(res) {
+        var chunks = [];
+        var length = 0;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            length += chunk.length;
+        });
+        res.on('end', function() {
+            var entries = []
+            ,metric_indexes = []
+            ,metrics = []
+            ,dimensions = []
+            ,dimension_indexes = [];
+
+            var data_data = combineChunks(chunks, length).toString();
+
+            var parsed_data = JSON.parse(data_data);
+
+            if (parsed_data.error) {
+              var err = new Error(parsed_data.error.message);
+              if (typeof cb === 'function' ) {
+                return cb(err);
+              }
+            }
+
+            if (!parsed_data.rows) {
+                parsed_data.rows = [];
+            }
+
+            for (var col=0; col&lt;parsed_data.columnHeaders.length; col++){
+                if(parsed_data.columnHeaders[col]['columnType'] === "METRIC"){
+                    metric_indexes.push(col);
+                    metrics.push(parsed_data.columnHeaders[col]);
+                }
+                if(parsed_data.columnHeaders[col]['columnType'] === "DIMENSION"){
+                    dimension_indexes.push(col);
+                    dimensions.push(parsed_data.columnHeaders[col]);
+                }
+            }
+
+
+            for (var i=0; i&lt;parsed_data.rows.length; i++){
+                var entry = {metrics:[], dimensions:[]};
+
+                var object_metric = {};
+                for (var j=0; j&lt;metrics.length; j++){
+                    object_metric[metrics[j].name] = parseFloat(parsed_data.rows[i][metric_indexes[j]]);
+                }
+                entry.metrics.push(object_metric);
+
+                var object_dimension = {};
+                for (var j=0; j&lt;dimensions.length; j++){
+                    object_dimension[dimensions[j].name] = parsed_data.rows[i][dimension_indexes[j]];
+                }
+                entry.dimensions.push(object_dimension);
+
+                self.emit('entry', entry);
+                entries.push(entry);
+
+            }
+
+            if (typeof cb === 'function' ) cb(null, entries);
+
+        });
+    });
+    req.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.login" id="apidoc.element.googleanalytics.GA.prototype.login">
+        function <span class="apidocSignatureSpan">googleanalytics.</span>GA.prototype.login
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">GA.prototype.login = function (cb) {
+    var self = this;
+
+    this.removeAllListeners('token');
+
+    this.on('token', this.captureToken);
+
+    if (cb) this.on('token', cb);
+
+    var postData = {
+        Email: this.user,
+        Passwd: this.password,
+        accountType: "HOSTED_OR_GOOGLE",
+        source: "curl-accountFeed-v2",
+        service: "analytics"
+    };
+
+    var options = { host: "www.google.com", port: 443, method: 'POST', path: '/accounts/ClientLogin', headers: { 'Content-Type': '
+application/x-www-form-urlencoded' } };
+    var req = https.request(options, function(res) {
+        var chunks = [];
+        var length = 0;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            length += chunk.length;
+        });
+        res.on('end', function() {
+            var data = combineChunks(chunks, length).toString();
+            var m = data.match(/(Auth=[^\s]*)\s/);
+            if (!m) {
+                m = data.match(/(Error=[^\s]*)\s/);
+                if(m) {
+                    var errMessage = m[0].replace('Error=', '');
+                    var err = new Error(errMessage);
+                    err.responseData = data;
+                    self.emit('token', err, null);
+                } else {
+                    self.emit('error', data);
+                }
+            } else {
+                self.emit('token', null, m[1]);
+            }
+        });
+    });
+    req.write(querystring.stringify(postData));
+    req.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.googleanalytics.GA" id="apidoc.module.googleanalytics.GA">module googleanalytics.GA</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.GA" id="apidoc.element.googleanalytics.GA.GA">
+        function <span class="apidocSignatureSpan">googleanalytics.</span>GA
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GA(config) {
+    if (config) {
+        if ('user' in config) {
+            this.user = config.user;
+            this.tokenType = 'GoogleLogin';
+        }
+        if ('password' in config) {
+            this.password = config.password;
+        }
+        this.token = ('token' in config) ? config.token : null;
+        if ('token' in config) {
+            this.tokenType = config.tokenType || 'Bearer';
+        }
+        if ('token' in config &amp;&amp; ('user' in config || 'password' in config)) {
+            throw Error("Invalid config.");
+        }
+    } else {
+        throw Error("No config given.");
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var GA = require('googleanalytics'),
+    util = require('util'),
+    config = {
+        "user": "myusername",
+        "password": "mypassword"
+    },
+    ga = new GA.<span class="apidocCodeKeywordSpan">GA</span>(config);
+
+ga.login(function(err, token) {
+    var options = {
+        'ids': 'ga:&lt;profileid&gt;',
+        'start-date': '2010-09-01',
+        'end-date': '2010-09-30',
+        'dimensions': 'ga:pagePath',
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.super_" id="apidoc.element.googleanalytics.GA.super_">
+        function <span class="apidocSignatureSpan">googleanalytics.GA.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.googleanalytics.GA.prototype" id="apidoc.module.googleanalytics.GA.prototype">module googleanalytics.GA.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.captureToken" id="apidoc.element.googleanalytics.GA.prototype.captureToken">
+        function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>captureToken
+        <span class="apidocSignatureSpan">(err, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">captureToken = function (err, token) {
+    this.token = token;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.get" id="apidoc.element.googleanalytics.GA.prototype.get">
+        function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>get
+        <span class="apidocSignatureSpan">(options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options, cb) {
+    var self = this;
+
+    var rt = (options.metrics.lastIndexOf('rt:',0) === 0 ? true : false);
+    var data_url = "/analytics/v3/data/" + (rt ? "realtime?" : "ga?") + querystring.stringify(options);
+
+    var get_options = {
+        host: 'www.googleapis.com',
+        port: 443,
+        path: data_url,
+        method: 'GET',
+        headers: {
+            Authorization: this.tokenType + " " + this.token,
+            "GData-Version": 2
+        }
+    };
+
+    var req = https.request(get_options, function(res) {
+        var chunks = [];
+        var length = 0;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            length += chunk.length;
+        });
+        res.on('end', function() {
+            var entries = []
+            ,metric_indexes = []
+            ,metrics = []
+            ,dimensions = []
+            ,dimension_indexes = [];
+
+            var data_data = combineChunks(chunks, length).toString();
+
+            var parsed_data = JSON.parse(data_data);
+
+            if (parsed_data.error) {
+              var err = new Error(parsed_data.error.message);
+              if (typeof cb === 'function' ) {
+                return cb(err);
+              }
+            }
+
+            if (!parsed_data.rows) {
+                parsed_data.rows = [];
+            }
+
+            for (var col=0; col&lt;parsed_data.columnHeaders.length; col++){
+                if(parsed_data.columnHeaders[col]['columnType'] === "METRIC"){
+                    metric_indexes.push(col);
+                    metrics.push(parsed_data.columnHeaders[col]);
+                }
+                if(parsed_data.columnHeaders[col]['columnType'] === "DIMENSION"){
+                    dimension_indexes.push(col);
+                    dimensions.push(parsed_data.columnHeaders[col]);
+                }
+            }
+
+
+            for (var i=0; i&lt;parsed_data.rows.length; i++){
+                var entry = {metrics:[], dimensions:[]};
+
+                var object_metric = {};
+                for (var j=0; j&lt;metrics.length; j++){
+                    object_metric[metrics[j].name] = parseFloat(parsed_data.rows[i][metric_indexes[j]]);
+                }
+                entry.metrics.push(object_metric);
+
+                var object_dimension = {};
+                for (var j=0; j&lt;dimensions.length; j++){
+                    object_dimension[dimensions[j].name] = parsed_data.rows[i][dimension_indexes[j]];
+                }
+                entry.dimensions.push(object_dimension);
+
+                self.emit('entry', entry);
+                entries.push(entry);
+
+            }
+
+            if (typeof cb === 'function' ) cb(null, entries);
+
+        });
+    });
+    req.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        'start-date': '2010-09-01',
+        'end-date': '2010-09-30',
+        'dimensions': 'ga:pagePath',
+        'metrics': 'ga:pageviews',
+        'sort': '-ga:pagePath'
+    };
+
+    ga.<span class="apidocCodeKeywordSpan">get</span>(options, function(err, entries) {
+       util.debug(JSON.stringify(entries));
+    });
+});
+
+If you have already gotten permission from a user, you can simply use the oAuth access token you have:
+
+var GA = require('googleanalytics'),
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.login" id="apidoc.element.googleanalytics.GA.prototype.login">
+        function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>login
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">login = function (cb) {
+    var self = this;
+
+    this.removeAllListeners('token');
+
+    this.on('token', this.captureToken);
+
+    if (cb) this.on('token', cb);
+
+    var postData = {
+        Email: this.user,
+        Passwd: this.password,
+        accountType: "HOSTED_OR_GOOGLE",
+        source: "curl-accountFeed-v2",
+        service: "analytics"
+    };
+
+    var options = { host: "www.google.com", port: 443, method: 'POST', path: '/accounts/ClientLogin', headers: { 'Content-Type': '
+application/x-www-form-urlencoded' } };
+    var req = https.request(options, function(res) {
+        var chunks = [];
+        var length = 0;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            length += chunk.length;
+        });
+        res.on('end', function() {
+            var data = combineChunks(chunks, length).toString();
+            var m = data.match(/(Auth=[^\s]*)\s/);
+            if (!m) {
+                m = data.match(/(Error=[^\s]*)\s/);
+                if(m) {
+                    var errMessage = m[0].replace('Error=', '');
+                    var err = new Error(errMessage);
+                    err.responseData = data;
+                    self.emit('token', err, null);
+                } else {
+                    self.emit('error', data);
+                }
+            } else {
+                self.emit('token', null, m[1]);
+            }
+        });
+    });
+    req.write(querystring.stringify(postData));
+    req.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    util = require('util'),
+    config = {
+        "user": "myusername",
+        "password": "mypassword"
+    },
+    ga = new GA.GA(config);
+
+ga.<span class="apidocCodeKeywordSpan">login</span>(function(err, token) {
+    var options = {
+        'ids': 'ga:&lt;profileid&gt;',
+        'start-date': '2010-09-01',
+        'end-date': '2010-09-30',
+        'dimensions': 'ga:pagePath',
+        'metrics': 'ga:pageviews',
+        'sort': '-ga:pagePath'
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.googleanalytics.GA.prototype.captureToken" id="apidoc.module.googleanalytics.GA.prototype.captureToken">module googleanalytics.GA.prototype.captureToken</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.captureToken.captureToken" id="apidoc.element.googleanalytics.GA.prototype.captureToken.captureToken">
+        function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>captureToken
+        <span class="apidocSignatureSpan">(err, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">captureToken = function (err, token) {
+    this.token = token;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.googleanalytics.GA.prototype.get" id="apidoc.module.googleanalytics.GA.prototype.get">module googleanalytics.GA.prototype.get</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.get.get" id="apidoc.element.googleanalytics.GA.prototype.get.get">
+        function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>get
+        <span class="apidocSignatureSpan">(options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options, cb) {
+    var self = this;
+
+    var rt = (options.metrics.lastIndexOf('rt:',0) === 0 ? true : false);
+    var data_url = "/analytics/v3/data/" + (rt ? "realtime?" : "ga?") + querystring.stringify(options);
+
+    var get_options = {
+        host: 'www.googleapis.com',
+        port: 443,
+        path: data_url,
+        method: 'GET',
+        headers: {
+            Authorization: this.tokenType + " " + this.token,
+            "GData-Version": 2
+        }
+    };
+
+    var req = https.request(get_options, function(res) {
+        var chunks = [];
+        var length = 0;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            length += chunk.length;
+        });
+        res.on('end', function() {
+            var entries = []
+            ,metric_indexes = []
+            ,metrics = []
+            ,dimensions = []
+            ,dimension_indexes = [];
+
+            var data_data = combineChunks(chunks, length).toString();
+
+            var parsed_data = JSON.parse(data_data);
+
+            if (parsed_data.error) {
+              var err = new Error(parsed_data.error.message);
+              if (typeof cb === 'function' ) {
+                return cb(err);
+              }
+            }
+
+            if (!parsed_data.rows) {
+                parsed_data.rows = [];
+            }
+
+            for (var col=0; col&lt;parsed_data.columnHeaders.length; col++){
+                if(parsed_data.columnHeaders[col]['columnType'] === "METRIC"){
+                    metric_indexes.push(col);
+                    metrics.push(parsed_data.columnHeaders[col]);
+                }
+                if(parsed_data.columnHeaders[col]['columnType'] === "DIMENSION"){
+                    dimension_indexes.push(col);
+                    dimensions.push(parsed_data.columnHeaders[col]);
+                }
+            }
+
+
+            for (var i=0; i&lt;parsed_data.rows.length; i++){
+                var entry = {metrics:[], dimensions:[]};
+
+                var object_metric = {};
+                for (var j=0; j&lt;metrics.length; j++){
+                    object_metric[metrics[j].name] = parseFloat(parsed_data.rows[i][metric_indexes[j]]);
+                }
+                entry.metrics.push(object_metric);
+
+                var object_dimension = {};
+                for (var j=0; j&lt;dimensions.length; j++){
+                    object_dimension[dimensions[j].name] = parsed_data.rows[i][dimension_indexes[j]];
+                }
+                entry.dimensions.push(object_dimension);
+
+                self.emit('entry', entry);
+                entries.push(entry);
+
+            }
+
+            if (typeof cb === 'function' ) cb(null, entries);
+
+        });
+    });
+    req.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        'start-date': '2010-09-01',
+        'end-date': '2010-09-30',
+        'dimensions': 'ga:pagePath',
+        'metrics': 'ga:pageviews',
+        'sort': '-ga:pagePath'
+    };
+
+    ga.<span class="apidocCodeKeywordSpan">get</span>(options, function(err, entries) {
+       util.debug(JSON.stringify(entries));
+    });
+});
+
+If you have already gotten permission from a user, you can simply use the oAuth access token you have:
+
+var GA = require('googleanalytics'),
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.googleanalytics.GA.prototype.login" id="apidoc.module.googleanalytics.GA.prototype.login">module googleanalytics.GA.prototype.login</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.googleanalytics.GA.prototype.login.login" id="apidoc.element.googleanalytics.GA.prototype.login.login">
+        function <span class="apidocSignatureSpan">googleanalytics.GA.prototype.</span>login
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">login = function (cb) {
+    var self = this;
+
+    this.removeAllListeners('token');
+
+    this.on('token', this.captureToken);
+
+    if (cb) this.on('token', cb);
+
+    var postData = {
+        Email: this.user,
+        Passwd: this.password,
+        accountType: "HOSTED_OR_GOOGLE",
+        source: "curl-accountFeed-v2",
+        service: "analytics"
+    };
+
+    var options = { host: "www.google.com", port: 443, method: 'POST', path: '/accounts/ClientLogin', headers: { 'Content-Type': '
+application/x-www-form-urlencoded' } };
+    var req = https.request(options, function(res) {
+        var chunks = [];
+        var length = 0;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            length += chunk.length;
+        });
+        res.on('end', function() {
+            var data = combineChunks(chunks, length).toString();
+            var m = data.match(/(Auth=[^\s]*)\s/);
+            if (!m) {
+                m = data.match(/(Error=[^\s]*)\s/);
+                if(m) {
+                    var errMessage = m[0].replace('Error=', '');
+                    var err = new Error(errMessage);
+                    err.responseData = data;
+                    self.emit('token', err, null);
+                } else {
+                    self.emit('error', data);
+                }
+            } else {
+                self.emit('token', null, m[1]);
+            }
+        });
+    });
+    req.write(querystring.stringify(postData));
+    req.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    util = require('util'),
+    config = {
+        "user": "myusername",
+        "password": "mypassword"
+    },
+    ga = new GA.GA(config);
+
+ga.<span class="apidocCodeKeywordSpan">login</span>(function(err, token) {
+    var options = {
+        'ids': 'ga:&lt;profileid&gt;',
+        'start-date': '2010-09-01',
+        'end-date': '2010-09-30',
+        'dimensions': 'ga:pagePath',
+        'metrics': 'ga:pageviews',
+        'sort': '-ga:pagePath'
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
