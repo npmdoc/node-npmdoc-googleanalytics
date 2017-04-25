@@ -1,4 +1,7 @@
-# api documentation for  [googleanalytics (v0.3.7)](https://github.com/ncb000gt/node-googleanalytics)  [![npm package](https://img.shields.io/npm/v/npmdoc-googleanalytics.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-googleanalytics) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-googleanalytics.svg)](https://travis-ci.org/npmdoc/node-npmdoc-googleanalytics)
+# npmdoc-googleanalytics
+
+#### basic api documentation for  [googleanalytics (v0.3.7)](https://github.com/ncb000gt/node-googleanalytics)  [![npm package](https://img.shields.io/npm/v/npmdoc-googleanalytics.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-googleanalytics) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-googleanalytics.svg)](https://travis-ci.org/npmdoc/node-npmdoc-googleanalytics)
+
 #### Google Analytics library.
 
 [![NPM](https://nodei.co/npm/googleanalytics.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/googleanalytics)
@@ -80,7 +83,8 @@
         "url": "git+ssh://git@github.com/ncb000gt/node-googleanalytics.git"
     },
     "scripts": {},
-    "version": "0.3.7"
+    "version": "0.3.7",
+    "bin": {}
 }
 ```
 
